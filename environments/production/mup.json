@@ -4,7 +4,8 @@
     { 
       "host": "45.55.249.206", 
       "username": "root", 
-      "pem": "~/.ssh/id_391b76d605585ecc58252aeca6181ebf" 
+//      "pem": "~/.ssh/id_391b76d605585ecc58252aeca6181ebf" 
+      "pem": "~/mclp.pem" 
     } 
   ], 
   "setupMongo": true, 
@@ -21,7 +22,7 @@
   // Configure environment 
   "env": { 
     "PORT": 80, 
-    "ROOT_URL": "45.55.249.206", 
+    "ROOT_URL": "http://45.55.249.206", 
     "NODE_ENV": "production" 
  
     // These values are set through string replacement for security 
