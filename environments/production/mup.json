@@ -22,7 +22,7 @@
   "env": { 
     "PORT": 80, 
     "ROOT_URL": "45.55.249.206", 
-    "NODE_ENV": "production" ,
+    "NODE_ENV": "production" 
  
     // These values are set through string replacement for security 
 //    "MAIL_URL": "%MAIL_URL%" 
