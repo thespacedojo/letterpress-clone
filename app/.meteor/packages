@@ -8,3 +8,8 @@ meteor-platform
 autopublish
 insecure
 xolvio:cucumber
+
+letterpress:core
+letterpress:fixtures
+
+chuangbo:marked

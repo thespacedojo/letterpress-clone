@@ -1,0 +1,17 @@
+<head>
+  <title>app</title>
+</head>
+
+<body>
+  {{> landingPage}}
+</body>
+
+<template name="landingPage">
+
+  {{#with content}}
+
+    {{#markdown}}{{description}}{{/markdown}}
+
+  {{/with}}
+
+</template>
