@@ -22,6 +22,28 @@
         getText('p em').should.become(tagLine);
     });
 
+    this.Given(/^I have created a chapter called "([^"]*)" at "([^"]*)" with the description$/, function (title, path, text) {
+      return this.server.call(
+        'fixtures/page/create', {
+          template: 'chapter',
+          title: title,
+          path: path,
+          description: text
+      });
+    });
+
+    this.Then(/^they see the chapter "([^"]*)" in the table of contents with the description$/, function (title, text) {
+      return this.client.
+        waitForExist('//*[@class="chapter"]//a[contains(text(), "' + title + '")]').
+        waitForExist('//*[@class="chapter"]//p[contains(text(), "' + text + '")]');
+    });
+
+    this.Then(/^they can navigate to "([^"]*)" at "([^"]*)"$/, function (title, source) {
+      return this.client.
+        waitForExist('a[title="' + title + '"]').
+        getAttribute('a[title="' + title + '"]', 'href').should.eventually.contain(source);
+    });
+
   };
 
 })(); 
