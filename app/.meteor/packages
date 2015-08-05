@@ -13,3 +13,7 @@ letterpress:core
 letterpress:fixtures
 
 chuangbo:marked
+iron:router
+sanjo:jasmine
+
+velocity:helpers

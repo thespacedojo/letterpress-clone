@@ -10,14 +10,13 @@ Feature: Create a Landing Page
     Then they see the cover image from "/cover.jpg"
     And they see the tag-line "Learn how to do something"
 
-  @dev
   Scenario: See a table of content
     Given I have created a landing page
-    And I have created a chapter called "Holistic Agencies" at "/holistic-agencies" with the description
+    And   I created a "chapter" called "Holistic Agencies" at "/holistic-agencies" with the following markdown
           """
           How to get a sofa into a room it won't fit in.
           """
-    And   I have created a chapter called "Forty Two" at "/forty-two" with the description
+    And   I created a "chapter" called "Forty Two" at "/forty-two" with the following markdown
           """
           The answer to life, universe and everything.
           """
